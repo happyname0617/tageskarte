@@ -10,5 +10,5 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 
 app.listen(process.env.PORT || config.NODE_PORT, process.env.IP || "0.0.0.0",function(){
-  logger.info('listening on %s',process.env.PORT||config.NODE_PORT)
+  console.long('listening on %s',process.env.PORT||config.NODE_PORT)
 })
