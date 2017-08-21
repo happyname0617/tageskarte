@@ -6,7 +6,7 @@ var app = express()
 
 
 
-app.use(express.static(path.join(__dirname, 'client')))
+app.use(express.static(path.join(__dirname, 'static')))
 
 
 app.listen(process.env.PORT || config.NODE_PORT, process.env.IP || "0.0.0.0",function(){
